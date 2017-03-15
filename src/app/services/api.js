@@ -86,7 +86,7 @@
                 url += '&password=' + connection.password;
             }
             if (connection.host.indexOf('/') != 0) {
-                url += '&add_http_cors_header=1';
+                //url += '&add_http_cors_header=1';
             }
             if (withDatabase) {
                 url += '&database=' + database;

@@ -47,16 +47,16 @@
                 <div class="login-view">
                     <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
                         <form class="p++" name="loginForm">
-                            <div>
+                            <div style="display: none">
                                 <md-input-container>
                                     <label>{{'Название' | translate}}</label>
-                                    <input ng-model="vars.db.name" required ng-disabled="vars.loading">
+                                    <input ng-model="vars.db.name" required ng-disabled="true" ng-init="vars.db.name = 'DWH'">
                                 </md-input-container>
                             </div>
-                            <div>
+                            <div style="display: none">
                                 <md-input-container>
                                     <label>{{'Хост:порт' | translate}}</label>
-                                    <input ng-model="vars.db.host" required ng-disabled="vars.loading">
+                                    <input ng-model="vars.db.host" required ng-disabled="true" ng-init="vars.db.host = 'db3.mkt.2rll.net:8321'">
                                 </md-input-container>
                             </div>
                             <div>
